@@ -4,23 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f02d0b0-b874-4cfb-8c8a-15a5691c6ea3" name="Changes" comment="" />
+    <list default="true" id="2f02d0b0-b874-4cfb-8c8a-15a5691c6ea3" name="Changes" comment="new unite testing">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/currencyexchange/model/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/currencyexchange/service/MoneyTransferService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="27" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/CurrencyExchange" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/openjdk-26.0.1/Contents/Home/lib/src.zip!/java.base/java/util/ArrayList.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/openjdk-26.0.1/Contents/Home/lib/src.zip!/java.base/java/util/Optional.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -29,26 +41,110 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2,
-  "fromUser": false
-}]]></component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000108042164484" />
+      <entry key="S2" value="1.0988351987918559" />
+      <entry key="S5" value="1.7075393850984555" />
+      <entry key="S10" value="2.4497419627928116" />
+      <entry key="S30" value="4.0687621002412815" />
+      <entry key="S60" value="6.71252294936759" />
+      <entry key="M2" value="12.85076228601166" />
+      <entry key="M5" value="29.662104807847356" />
+      <entry key="M10" value="56.54824158377243" />
+      <entry key="M15" value="83.34821670354928" />
+      <entry key="M30" value="145.45580476009948" />
+      <entry key="H1" value="215.61265548872055" />
+      <entry key="H2" value="313.86178468100246" />
+      <entry key="H4" value="453.8211290337755" />
+      <entry key="D1" value="789.2071142503438" />
+      <entry key="W1" value="931.5695729555523" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="3.1639590221599654E-115" />
+      <entry key="MS500" value="1.2820047200197806E-23" />
+      <entry key="S2" value="2.6162257308853493E-6" />
+      <entry key="S5" value="0.010280354987309665" />
+      <entry key="S10" value="0.20195287673440118" />
+      <entry key="S30" value="2.4430001653150004" />
+      <entry key="S60" value="7.170470659354608" />
+      <entry key="M2" value="17.286322579821153" />
+      <entry key="M5" value="41.27140286639838" />
+      <entry key="M10" value="67.90281594193208" />
+      <entry key="M15" value="88.52056080537997" />
+      <entry key="M30" value="129.45930697374638" />
+      <entry key="H1" value="172.45086186371293" />
+      <entry key="H2" value="238.19992433994898" />
+      <entry key="H4" value="337.31650351599006" />
+      <entry key="D1" value="555.2672291377597" />
+      <entry key="W1" value="632.4115421261826" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.054787857582252186" />
+      <entry key="MS500" value="0.5594263641351328" />
+      <entry key="S2" value="0.9506176183826791" />
+      <entry key="S5" value="1.6145285525414979" />
+      <entry key="S10" value="2.558299468335624" />
+      <entry key="S30" value="6.401734396997322" />
+      <entry key="S60" value="13.744075571399362" />
+      <entry key="M2" value="29.977234799771075" />
+      <entry key="M5" value="70.78155701329774" />
+      <entry key="M10" value="124.32100835716616" />
+      <entry key="M15" value="171.7512650627489" />
+      <entry key="M30" value="274.8234327833169" />
+      <entry key="H1" value="387.99925162743614" />
+      <entry key="H2" value="552.0146052167102" />
+      <entry key="H4" value="791.1025112682445" />
+      <entry key="D1" value="1344.4640493300162" />
+      <entry key="W1" value="1563.979401447059" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3GJoQNNA42M6EEOdBZsBZBNnHgI" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.CircuitBreakerAnswer.test_SUCCESS.executor": "Debug",
+    "JUnit.CircuitBreakerAnswerTest.executor": "Debug",
+    "JUnit.CircuitBreakerTest.executor": "Debug",
+    "JUnit.InterviewOriginal.circuitBreaker_FAILURE.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.CurrencyExchangeApplication.executor": "Debug",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "<unknown>",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "nodejs_package_manager_path": "npm"
+    "last_opened_file_path": "/Users/hiufungchan/java/CurrencyExchange",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -59,18 +155,73 @@
       <recent name="org.example.currencyexchange.utils" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
+  <component name="RunManager" selected="Spring Boot.CurrencyExchangeApplication">
+    <configuration name="CircuitBreakerAnswerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Currency" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CircuitBreakerAnswerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+    <configuration name="CircuitBreakerAnswer.test_SUCCESS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Currency" />
-      <option name="filePath" />
-      <method v="2" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CircuitBreakerAnswer" />
+      <option name="METHOD_NAME" value="test_SUCCESS" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
+    <configuration name="CircuitBreakerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Currency" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.currencyexchange.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.currencyexchange.utils" />
+      <option name="MAIN_CLASS_NAME" value="org.example.currencyexchange.utils.CircuitBreakerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InterviewOriginal.circuitBreaker_FAILURE" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Currency" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.currencyexchange.task.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.currencyexchange" />
+      <option name="MAIN_CLASS_NAME" value="org.example.currencyexchange.InterviewOriginal" />
+      <option name="METHOD_NAME" value="circuitBreaker_FAILURE" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CurrencyExchangeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="Currency" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.currencyexchange.CurrencyExchangeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CircuitBreakerAnswerTest" />
+        <item itemvalue="JUnit.CircuitBreakerAnswer.test_SUCCESS" />
+        <item itemvalue="JUnit.InterviewOriginal.circuitBreaker_FAILURE" />
+        <item itemvalue="JUnit.CircuitBreakerTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -87,6 +238,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1783699016992</updated>
+      <workItem from="1784454414192" duration="51000" />
+      <workItem from="1784454471079" duration="125000" />
+      <workItem from="1784454597867" duration="3657000" />
+      <workItem from="1784459419883" duration="7326000" />
+      <workItem from="1786287985933" duration="10496000" />
     </task>
     <servers />
   </component>
@@ -99,5 +255,13 @@
     <option featureType="dependencySupport" implementationName="java:org.springframework:spring-messaging" />
     <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
     <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new unite testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="new unite testing" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

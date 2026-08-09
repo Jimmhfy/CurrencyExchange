@@ -1,6 +1,8 @@
 package org.example.currencyexchange.utils;
 
-import org.example.currencyexchange.exception.CircuitBreakerException;
+import java.time.Duration;
+import java.time.Instant;
+import java.util.function.Function;
 
 /*
     # Overview
@@ -30,40 +32,63 @@ import org.example.currencyexchange.exception.CircuitBreakerException;
     val result = circuitBreaker.execute(parameters)
     ```
 */
-public class CircuitBreaker
+public class CircuitBreaker <I,R>
 {
-    private CircuitBreakerState state;
-    public enum CircuitBreakerState {
-        OPEN,
-        HALF_OPEN,
-        CLOSE
+    public enum State {
+        CLOSE, HALF_OPEN, OPEN
     }
-    private int thresholdLimit = 0;
-    private int consecutiveFailures = 0;
+    private State state = State.CLOSE;
+    private final int failureThreshold;
+    private int failureCount = 0;
+    private final Function<I,R> serviceFunction;
+    private Instant lastStateChange = Instant.now();
+    private final int retryInterval;
 
-    CircuitBreaker(int thresholdLimit) {
-        state = CircuitBreakerState.CLOSE;
-        this.thresholdLimit = thresholdLimit;
+    public CircuitBreaker(Function<I,R> serviceFunction, int failureThreshold, int retryInterval) {
+        this.failureThreshold = failureThreshold;
+        this.serviceFunction = serviceFunction;
+        this.retryInterval = retryInterval;
     }
 
-    public <R> R execute(FunctionalSupplier<R> function) {
-        if (state == CircuitBreakerState.OPEN) throw new CircuitBreakerException("Circuit Breaker Opened!");
+    public R excute(I params) {
         try {
-            R output = function.apply();
-            consecutiveFailures = 0;
-            return output;
+            checkState();
+            R ret = serviceFunction.apply(params);
+            successCall();
+            return ret;
         } catch (Exception e) {
-            consecutiveFailures++;
-            if (consecutiveFailures >= thresholdLimit) {
-                state = CircuitBreakerState.OPEN;
-                throw new CircuitBreakerException("Circuit Breaker Just Opened!");
-            }
-            throw new CircuitBreakerException("Circuit Breaker is not meet the threshold!");
+            failureCall();
+            System.out.println(e.getMessage());
+            throw e;
         }
     }
 
-    public <I,R> R execute(FunctionalInterfaceUtil<I,R> function, I input) {
-        return execute(() -> function.apply(input));
+    public void checkState() throws RuntimeException {
+        if (state.equals(State.OPEN)) {
+            if (lastStateChange.plus(Duration.ofSeconds(retryInterval)).isBefore(Instant.now())) {
+                state = State.HALF_OPEN;
+                lastStateChange = Instant.now();
+            }
+            else
+                throw new RuntimeException("CircuitBreaker is open");
+        }
+    }
+
+    public void failureCall() {
+        failureCount++;
+        if (failureCount >= failureThreshold) {
+            state = State.OPEN;
+            lastStateChange = Instant.now();
+        }
+
+    }
+
+    public void successCall() {
+        if (state == State.HALF_OPEN) {
+            state = State.CLOSE;
+            lastStateChange = Instant.now();
+        }
+        failureCount = 0;
     }
 }
 
